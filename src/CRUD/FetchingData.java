@@ -1,3 +1,5 @@
+package CRUD;
+
 import java.sql.*;
 
 public class FetchingData {

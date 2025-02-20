@@ -1,9 +1,9 @@
-package CRUD;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Connection {
+public class Main {
     public static void main(String[] args) {
 
         // Database URL
@@ -14,7 +14,7 @@ public class Connection {
         String password = "368893";
 
         // Establish the connection
-        try (java.sql.Connection connection = DriverManager.getConnection(url, username, password)) {
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
             System.out.println("Connected to the database.");
             System.out.println(connection);
 
